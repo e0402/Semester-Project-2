@@ -18,8 +18,7 @@
       defer
     ></script>
     <script src="/src/js/index.mjs" defer type="module"></script>
-    <link rel="shortcut icon" href="#" />
-    <title>Auction House | Profile page</title>
+    <title>Whazzup | Post</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md fixed-top">
@@ -28,7 +27,7 @@
           class="fas fa-user-friends fa-1x mx-2 ms-3"
           style="color: #ffffff"
         ></i>
-        <a class="navbar-brand me-5" href="../listings/">Auction House</a>
+        <a class="navbar-brand me-5" href="/posts/">Whazzup</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -43,14 +42,15 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link white" aria-current="page" href="../listings/"
+              <a
+                class="nav-link active white"
+                aria-current="page"
+                href="/posts/"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active white" href="../profile/edit/"
-                >Profile</a
-              >
+              <a class="nav-link white" href="/profile/edit/">Profile</a>
             </li>
             <li class="nav-item">
               <a class="nav-link white" href="">Log-out</a>
@@ -60,7 +60,7 @@
             <input
               class="form-control me-2"
               type="search"
-              placeholder="Only works on listings feed"
+              placeholder="Only works on post feed"
               aria-label="Search"
             />
             <button class="btn btn-two btn-outline-success" type="submit">
@@ -70,8 +70,31 @@
         </div>
       </div>
     </nav>
-    <main class="m-5">
-      <div class="col-12 col-lg-12" id="profileContainer"></div>
+    <main class="">
+      <div class="d-flex align-items-center justify-content-center">
+        <a
+          href="../posts/"
+          class="btn btn-two btn-outline-success"
+          width=""
+          style="
+            margin-top: 100px;
+            padding: 12.5px;
+            border-radius: 0.65rem;
+            text-decoration: none;
+          "
+          ;
+          >Back to feed</a
+        >
+      </div>
+      <section class="d-flex align-items-center justify-content-center mb-5">
+        <div class="card border-0" style="width: 42rem">
+          <div class="card-body">
+            <div class="col-12 col-lg-12" id="post">
+              <!-- Single post -->
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer
       class="footer mt-auto py-5 green col-md-12 justify-content-center my-5 pt-5 text-muted text-center text-small mb-0 green"
@@ -87,7 +110,7 @@
           <a href="#" class="text-white">Help</a>
         </li>
       </ul>
-      <p class="mb-1 text-light">&copy; 2023 Auction House</p>
+      <p class="mb-1 text-light">&copy; 2023 Whazzup</p>
     </footer>
   </body>
 </html>
