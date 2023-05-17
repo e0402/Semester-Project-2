@@ -41,7 +41,7 @@ export function listingsTemplateB(listingData) {
         <div class="bg-image hover-overlay ripple rounded-0 image-container" data-mdb-ripple-color="light">
           <img src="${listingData.media}" alt="${
     listingData.description
-  }" class="w-100 mb-4" onerror="this.onerror=null;this.src='../images/rolex-login.jpg'; this.alt='Image not found';"/>
+  }" class="w-100 mb-4" onerror="this.onerror=null;this.src='../media/rolex-login.jpg'; this.alt='Image not found';"/>
           <span class="image-alt visually-hidden">Image not available</span>
               <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
               <div class="d-flex justify-content-center">

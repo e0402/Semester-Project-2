@@ -62,7 +62,7 @@ export function bidOnListingTemplate(listingData) {
             <div class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
               <img src="${listingData.media}" alt="${
     listingData.description
-  }" class="w-100 mb-4" onerror="this.onerror=null;this.src='../images/rolex-login.jpg'; this.alt='No image';"/>
+  }" class="w-100 mb-4" onerror="this.onerror=null;this.src='../media/rolex-login.jpg'; this.alt='No image';"/>
                   <span class="image-alt visually-hidden">Image not available</span>
             </div>
           </div>
