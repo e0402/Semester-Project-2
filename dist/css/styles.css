@@ -10849,6 +10849,10 @@ h1, .h1 {
   color: #fff;
 }
 
+.h1-alt-color {
+  color: #000;
+}
+
 .logo-font {
   font-size: 2.6em;
 }
