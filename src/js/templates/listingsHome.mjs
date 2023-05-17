@@ -72,6 +72,15 @@ export function listingsTemplateB(listingData) {
   </section>
     `;
 
+  // Get the card element
+  const card = listingsHomePage.querySelector(".card.grid-card");
+
+  // Add a click event listener
+  card.addEventListener("click", () => {
+    // Navigate to the profile/login page
+    window.location.href = "../profile/login/";
+  });
+
   return listingsHomePage;
 }
 
