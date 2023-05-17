@@ -8,26 +8,36 @@
       rel="stylesheet"
       href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link href="/dist/css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../dist/css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
     />
     <script
       src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
       defer
     ></script>
     <script src="/src/js/index.mjs" defer type="module"></script>
-    <title>Auction House | Listings</title>
+    <title>Luxury Bids | Listings</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md fixed-top">
       <div class="container-fluid">
-        <i
-          class="fas fa-user-friends fa-1x mx-2 ms-3"
-          style="color: #ffffff"
-        ></i>
-        <a class="navbar-brand me-5" href="/listings/">Auction House</a>
+        <div>
+          <i
+            class="fa-solid fa-stopwatch fa-1x mx-2 ms-3"
+            style="color: #ffffff; font-size: 24px"
+          ></i>
+          <a class="navbar-brand me-5 logo-font-nav" href="/listings/"
+            >Luxury Bids</a
+          >
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -53,7 +63,12 @@
               <a class="nav-link white" href="/profile/edit/">Profile</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link white" href="../profile/login/">Log-out</a>
+              <a
+                class="nav-link white"
+                id="logout-link"
+                href="../profile/login/"
+                >Log-out</a
+              >
             </li>
           </ul>
           <form id="search" class="d-flex mx-4">
@@ -64,24 +79,43 @@
               type="search"
               class="form-control me-2"
               id="searchInput"
-              placeholder="Search for listing content..."
+              placeholder="Search through our listings..."
             />
-            <button class="btn btn-two btn-outline-success">Search</button>
+            <button class="btn btn-outline-white">Search</button>
           </form>
         </div>
       </div>
     </nav>
+    <!-- Slider -->
+    <div class="slider">
+      <img
+        src="../images/painting-rubens.jpg"
+        alt="A close up of a baroque painting with a figure surrounded by lions"
+        class="slide slider-image"
+      />
+      <img
+        src="../images/pocket-watch.jpg"
+        alt="An old pocket-watch lying to the left in sand over a map"
+        class="slide slider-image"
+      />
+      <img
+        src="../images/banner-coins.jpg"
+        alt="A close up banner image showing lots of ancient gold coins"
+        class="slide slider-image"
+      />
+    </div>
+
     <main class="">
       <h1
         class="d-flex align-items-center justify-content-center"
-        style="margin-top: 150px"
+        style="margin: 70px 0 30px 0"
       >
-        Whazz on ur mind?
+        May the best bidder win!
       </h1>
       <div class="d-flex align-items-center justify-content-center mb-4">
         <a
           href="../listing/create/"
-          class="btn btn-two btn-lg btn-outline-success"
+          class="btn btn-two btn-lg btn-success"
           width=""
           style="
             margin-top: 50px;
@@ -94,17 +128,22 @@
         >
       </div>
       <div class="d-flex align-items-center justify-content-center pt-5 mb-0">
-        <label for="" class="text-black me-2">Listing filters:</label>
-        <select id="filterList" class="me-3" style="background: white">
-          <option value="2023">All year</option>
-          <option value="media">Media</option>
-          <option value="likes">Liked</option>
-          <option value="comments">Commented</option>
+        <select
+          id="filterList"
+          class="me-3 filter-dropdown"
+          style="background: white"
+        >
+          <option value="choose">Choose a filter</option>
+          <option value="active">Active listings</option>
+          <option value="2023">All listings</option>
         </select>
       </div>
+
       <section class="d-flex align-items-center justify-content-center">
-        <div class="col-12 col-lg-12 mb-5" id="listings">
-          <!-- thumbnails list -->
+        <div class="container-fluid">
+          <div class="grid-listings" id="listings">
+            <!-- Listing cards will go here -->
+          </div>
         </div>
       </section>
     </main>
@@ -122,7 +161,7 @@
           <a href="#" class="text-white">Help</a>
         </li>
       </ul>
-      <p class="mb-1 text-light">&copy; 2023 Auction House</p>
+      <p class="mb-1 text-light">&copy; 2023 Luxury Bids</p>
     </footer>
   </body>
 </html>

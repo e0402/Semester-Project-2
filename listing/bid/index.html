@@ -24,20 +24,20 @@
       defer
     ></script>
     <script src="/src/js/index.mjs" defer type="module"></script>
-    <link rel="shortcut icon" href="#" />
-    <title>Luxury Bids | Profile page</title>
+    <title>Luxury Bids | Listing</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md fixed-top">
-      <div>
-        <i
-          class="fa-solid fa-stopwatch fa-1x mx-2 ms-3"
-          style="color: #ffffff; font-size: 24px"
-        ></i>
-        <a class="navbar-brand me-5 logo-font-nav" href="/listings/"
-          >Luxury Bids</a
-        >
-      </div>
+      <div class="container-fluid">
+        <div>
+          <i
+            class="fa-solid fa-stopwatch fa-1x mx-2 ms-3"
+            style="color: #ffffff; font-size: 24px"
+          ></i>
+          <a class="navbar-brand me-5 logo-font-nav" href="/listings/"
+            >Luxury Bids</a
+          >
+        </div>
 
         <button
           class="navbar-toggler"
@@ -64,7 +64,12 @@
               <a class="nav-link white" href="/profile/edit/">Profile</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link white" id="logout-link" href="./login/">Log-out</a>
+              <a
+                class="nav-link white"
+                id="logout-link"
+                href="../../profile/login/"
+                >Log-out</a
+              >
             </li>
           </ul>
           <form id="search" class="d-flex mx-4">
@@ -82,8 +87,71 @@
         </div>
       </div>
     </nav>
-    <main class="m-5">
-      <div class="col-12 col-lg-12" id="profileContainer"></div>
+    <main class="">
+      <section
+        class="d-flex align-items-center justify-content-center mb-5"
+        style="margin-top: 150px"
+      >
+        <div class="card border-0" style="width: 42rem">
+          <div class="card-body">
+            <div class="col-12 col-lg-12" id="auctionListing">
+              <!-- Single listing -->
+            </div>
+            <div id="allBidsOnListing"></div>
+            <div
+              class="d-flex justify-content-center align-items-center"
+              style="margin-top: 50px"
+            >
+              <p class="fw-bold fs-5">Choose a bid amount:</p>
+            </div>
+            <div class="mx-4 mt-2">
+              <ul class="list-unstyled d-flex justify-content-center mb-0">
+                <li class="d-flex" style="margin-top: 14px">
+                  <form id="bidOnListing" action="">
+                    <div class="form-outline d-inline-block">
+                      <input
+                        type="number"
+                        name="amount"
+                        value=""
+                        style="width: 100px; height: 35px; margin-top: -3px"
+                        id=""
+                        placeholder="1000"
+                        class="form-control form-control-lg"
+                      />
+                    </div>
+                    <div class="pt-3 d-inline-block mb-5">
+                      <button
+                        class="btn btn-success"
+                        style="
+                          height: 45px;
+                          width: 100px;
+                          margin: -6px 0 0 10px;
+                        "
+                        data-id=""
+                      >
+                        Bid now
+                      </button>
+                    </div>
+                  </form>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mb-5">
+              <a
+                href="../../listings/"
+                class="btn btn-two btn-lg btn-outline-success"
+                width=""
+                style="
+                  padding: 8px;
+                  border-radius: 0.65rem;
+                  text-decoration: none;
+                "
+                >Back to feed</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer
       class="footer mt-auto py-5 green col-md-12 justify-content-center my-5 pt-5 text-muted text-center text-small mb-0 green"

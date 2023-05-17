@@ -19,7 +19,7 @@
     ></script>
     <script src="/src/js/index.mjs" defer type="module"></script>
     <link rel="shortcut icon" href="#" />
-    <title>Auction House | Register</title>
+    <title>Luxury Bids | Register</title>
   </head>
   <body>
     <main class="form-signin w-100 m-auto">
@@ -31,9 +31,9 @@
             <div class="col col-xl-10">
               <div class="card" style="border-radius: 1rem">
                 <div class="row g-0">
-                  <div class="col-md-6 col-lg-5 d-none d-md-block">
+                  <div class="col-md-6 col-lg-6 d-none d-md-block">
                     <img
-                      src="../../images/nature-2.jpg"
+                      src="../../images/champagne-bottle-register.jpg"
                       alt="Image showing tall mountains with a cloudy sky and green vegetation"
                       class=""
                       style="border-radius: 1rem 0 0 1rem"
@@ -41,15 +41,17 @@
                       width="100%"
                     />
                   </div>
-                  <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                  <div class="col-md-6 col-lg-6 d-flex align-items-center">
                     <div class="card-body p-4 p-lg-5 text-black">
                       <form id="registerForm">
                         <div class="d-flex align-items-center mb-3 pb-1">
                           <i
-                            class="fa-solid fa-gavel fa-2x me-3 mb-4"
-                            style="color: #00a088"
+                            class="fa-solid fa-stopwatch fa-3x me-3 mb-5 mt-3"
+                            style="color: #000000"
                           ></i>
-                          <span class="h1 fw-bold mb-4">Auction House</span>
+                          <span class="h1 fw-bold mb-4 logo-font"
+                            >Luxury Bids</span
+                          >
                         </div>
 
                         <h5
@@ -84,10 +86,11 @@
                             id="form2Example27"
                             class="form-control form-control-lg"
                             required
-                            pattern="^[\w\-.]+@(stud.)?noroff.no$"
-                            title="Only Noroff emails may be used (e.g. student@noroff.no)"
+                            pattern="^\w+@stud\.noroff\.no$"
+                            title="Only Noroff emails may be used (e.g. student@stud.noroff.no)"
                             placeholder="Please type in your Noroff email"
                           />
+
                           <label
                             class="form-label"
                             for="form2Example27"
@@ -111,51 +114,37 @@
                         </div>
 
                         <div class="form-outline mb-4">
-                          <input
-                            type="url"
-                            name="banner"
-                            id="form2Example27"
-                            class="form-control form-control-lg"
-                            placeholder="Banner (optional) (https://example/id/12/345)"
-                          />
-                          <label
-                            class="form-label"
-                            for="form2Example27"
-                          ></label>
-                        </div>
+                          <div class="form-outline mb-4">
+                            <input
+                              type="url"
+                              name="avatar"
+                              id="form2Example27"
+                              class="form-control form-control-lg"
+                              placeholder="Avatar (optional) (https://example/id/12/345)"
+                            />
+                            <label
+                              class="form-label"
+                              for="form2Example27"
+                            ></label>
+                          </div>
 
-                        <div class="form-outline mb-4">
-                          <input
-                            type="url"
-                            name="avatar"
-                            id="form2Example27"
-                            class="form-control form-control-lg"
-                            placeholder="Avatar (optional) (https://example/id/12/345)"
-                          />
-                          <label
-                            class="form-label"
-                            for="form2Example27"
-                          ></label>
-                        </div>
-
-                        <div class="pt-1 mb-4">
-                          <button class="btn btn-two btn-outline-success btn-lg me-2">
-                            Create account
-                          </button>
-                        <a
-                          href="../login/"
-                          class=""
-                          width=""
-                          style="
-                            padding: 8px;
-                            border-radius: 0.65rem;
-                            color: #393f81;
-                          "
-                          ;
-                          >Back to login</a
-                        >
-                      </div>
-
+                          <div class="pt-1 mb-4">
+                            <button class="btn btn-two btn-success btn-lg me-2">
+                              Create account
+                            </button>
+                            <a
+                              href="../login/"
+                              class=""
+                              width=""
+                              style="
+                                padding: 8px;
+                                border-radius: 0.65rem;
+                                color: #393f81;
+                              "
+                              ;
+                              >Back to login</a
+                            >
+                          </div>
                         </div>
                       </form>
                     </div>
