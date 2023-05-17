@@ -3,8 +3,9 @@ import { listingsTemplateB } from "../templates/listingsHome.mjs";
 const listingsContainer = document.querySelector("#listings");
 
 /**
- * This export search function filters an array of listings by first listening for a submit event, and then returns listings based on filter criteria set. The user can search based on title, name, description content and tag names for the listings.
+ * This export search function filters an array of listings by first listening for a submit event, and then returns listings based on filter criteria set. The user can search based on title, name, and listing description.
  * @param {Array} listings An array of objects(listings).
+ * @returns {void} Updates the DOM to display filtered listings or an error message if no listings match the search criteria.
  */
 
 export function setupSearch(listings) {

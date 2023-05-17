@@ -6,7 +6,7 @@ const method = "post";
 /**
  * This export function is sending the object data from the registration form to the register URL/API.
  * @param {object} profile Object data from registration form.
- * @returns
+ * @returns {object} The response from the register API.
  */
 
 export async function register(profile) {

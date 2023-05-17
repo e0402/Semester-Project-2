@@ -1,19 +1,11 @@
 import { listingsTemplateA } from "../templates/listing.mjs";
-// import { API_AUCTION_URL } from "../constants.mjs";
 
 const listingsContainer = document.querySelector("#listings");
-
 const select = document.querySelector("#filterList");
-
 const date = new Date();
 
-// const action = "/listings";
-
-// const activeListingsEndURL = `${action}?_seller=true&_bids=true&_active=true`;
-// const activeListingsURL = API_AUCTION_URL + activeListingsEndURL;
-
 /**
- *This export function filters an array of listings by first listening for a change event, and then returns listings based on filter criteria set. The user can filter listings based on listings from the whole year, listings containing media content, listings with likes and listings with comments
+ *This export function filters an array of listings by first listening for a change event, and then returns listings based on filter criteria set. The user can filter listings based on listings from the whole year, or listings that are currently active.
  * @param {Array} listings An array of objects (listings).
  */
 

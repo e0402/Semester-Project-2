@@ -1,7 +1,7 @@
 import { getListing, updateListing } from "../api/listings/index.mjs";
 
 /**
- * This export function listens for a form and if present is then "hydrated" with info from listing being created earlier. Like the create listing form - title, body, tags and media can be updated. The function then listens for a submit event from form button and PUT request from listings/update.mjs is completed.
+ * This export function listens for a form and if present is then "hydrated" with info from listing being created earlier. Like the create listing form - title, description, tags and media can be updated. The function then listens for a submit event from form button and PUT request from listings/update.mjs is completed.
  */
 
 export async function setUpdateListingListener() {

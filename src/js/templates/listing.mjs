@@ -33,7 +33,7 @@ if (slides.length > 0) {
 }
 
 /**
- * This export function is an HTML listings template with dynamic values inserted to retrieve all listings info from each listing author. The function also listens for a click event from delete button, which then reloads page again, before listings is returned.
+ * This export function is an HTML listings template with dynamic values inserted to retrieve all listings info from each listing author. The function also listens for a click event from whole card, profile link or delete button. If delete button is clicked, page reloads, before returning listings.
  *
  * @param {object} listingData Function parameter.
  * @returns Listings is returned.

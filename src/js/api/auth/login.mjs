@@ -7,6 +7,7 @@ const method = "post";
 /**
  * This export function is logging in an already registered account by fetching and sending the object with info to the login URL. Then the user info(name/email) and access token is stored seperately in local storage.
  * @param {object} profile Object data from logging form.
+ * @throws {Error} Throws an error if the login attempt was unsuccessful.
  */
 
 export async function login(profile) {
