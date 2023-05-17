@@ -84,72 +84,55 @@
             <div class="col-12 col-lg-12 d-flex align-items-center">
               <div class="card-body p-4 p-lg-5 text-black">
                 <form id="editListing">
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="title">Title</label>
+                    <input
+                      type="text"
+                      name="title"
+                      class="form-control form-control-lg"
+                      required
+                    />
+                  </div>
                 
                   <div class="form-outline mb-4">
-                    <label
-                    class="form-label"
-                    for="form2Example27"
-                  >Title</label>
-                      <input
-                        type="text"
-                        name="title"
-                        class="form-control form-control-lg"
-                        required
-                      />
-                    </div>
-
-                  <div class="form-outline mb-4">
-                    <label
-                    class="form-label"
-                    for="form2Example27"
-                  >Body</label>
+                    <label class="form-label" for="description">Body</label>
                     <textarea class="form-control" name="description" required></textarea>
                   </div>
-
+                
                   <div class="form-outline mb-4">
-                    <label
-                    class="form-label"
-                    for="form2Example27"
-                  >Tags</label>
+                    <label class="form-label" for="tags">Tags</label>
                     <input
                       type="text"
                       name="tags"
-                      id="form2Example27"
+                      id="tags"
                       class="form-control form-control-lg"
                     />
                   </div>
-
+                
                   <div class="form-outline mb-4">
-                    <label
-                    class="form-label"
-                    for="form2Example27"
-                  >Media</label>
+                    <label class="form-label" for="media">Media</label>
                     <input
                       type="url"
                       name="media"
-                      id="form2Example27"
+                      id="media"
                       class="form-control form-control-lg"
                     />
                   </div>
-
+                
                   <div class="pt-3">
-                      <button class="btn btn-two btn-success btn-lg me-2 changePagetoListingFeed">
-                        Update listing
-                      </button>
+                    <button class="btn btn-two btn-success btn-lg me-2 changePagetoListingFeed">
+                      Update listing
+                    </button>
                     <a
                       href="../../listings/"
                       class="btn btn-two btn-lg btn-outline-success"
-                      width=""
-                      style="
-                        padding: 8px;
-                        border-radius: 0.65rem;
-                        text-decoration: none;
-                      "
-                      ;
-                      >Cancel</a
+                      style="padding: 8px; border-radius: 0.65rem; text-decoration: none;"
                     >
+                      Cancel
+                    </a>
                   </div>
                 </form>
+                
               </div>
             </div>
           </div>

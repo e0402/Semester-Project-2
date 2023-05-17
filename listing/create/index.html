@@ -92,7 +92,7 @@
               <div class="card-body p-4 p-lg-5 text-black">
                 <form id="createListing" action="../../listings/">
                   <div class="form-outline mb-4">
-                    <label class="form-label mt-2" for="form2Example27">
+                    <label class="form-label mt-2" for="title">
                       <strong>Title (required)</strong>
                     </label>
                     <input
@@ -106,7 +106,7 @@
                   </div>
                 
                   <div class="form-outline mb-4">
-                    <label class="form-label" for="form2Example27">
+                    <label class="form-label" for="description">
                       <strong>Text content (required)</strong>
                     </label>
                     <textarea
@@ -119,7 +119,7 @@
                   </div>
                 
                   <div class="form-outline mb-4">
-                    <label class="form-label" for="form2Example27">
+                    <label class="form-label" for="tags">
                       <strong>Tags (required)</strong>
                     </label>
                     <input
@@ -128,11 +128,12 @@
                       id="tags"
                       placeholder="topicone, topictwo, topicthree..."
                       class="form-control form-control-lg"
+                      required
                     />
                   </div>
                 
                   <div class="form-outline mb-4">
-                    <label class="form-label" for="form2Example27">
+                    <label class="form-label" for="media">
                       <strong>Media (required)</strong>
                     </label>
                     <input
@@ -141,32 +142,24 @@
                       id="media"
                       placeholder="https://example.com/photo-123"
                       class="form-control form-control-lg"
+                      required
                     />
                   </div>
                 
                   <div class="form-outline mb-4">
-                    <label class="form-label" for="form2Example27">
+                    <label class="form-label" for="endsAt">
                       <strong>Auction ending date (required)</strong>
                     </label>
                     <input
                       type="date"
                       name="endsAt"
-                      value="2023-08-31T00:00:00.000Z"
+                      value="2023-08-31"
                       id="endsAt"
                       placeholder="The date you want the auction to end"
                       class="form-control form-control-lg"
+                      required
                     />
                   </div>
-
-                  <!-- <script>
-                    const formatDate = (dateString) => {
-                      const date = new Date(dateString);
-                      return `${date.getFullYear()}-${('0' + (date.getMonth() + 1)).slice(-2)}-${('0' + date.getDate()).slice(-2)}`;
-                    };
-                
-                    const endsAtInput = document.getElementById('endsAt');
-                    endsAtInput.value = formatDate(endsAtInput.value);
-                  </script> -->
                 
                   <div class="pt-3">
                     <button class="btn btn-two btn-success btn-lg me-2 changePagetoListingFeed">
@@ -175,18 +168,13 @@
                     <a
                       href="../../listings/"
                       class="btn btn-two btn-lg btn-outline-success"
-                      width=""
-                      style="
-                        padding: 8px;
-                        border-radius: 0.65rem;
-                        text-decoration: none;
-                      "
-                      ;
-                      >Cancel</a
+                      style="padding: 8px; border-radius: 0.65rem; text-decoration: none;"
                     >
+                      Cancel
+                    </a>
                   </div>
                 </form>
-                
+                                
               </div>
             </div>
           </div>
