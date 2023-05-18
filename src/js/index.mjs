@@ -1,4 +1,5 @@
 import * as listeners from "./handlers/index.mjs";
+import { slider } from "./slider/slider.mjs";
 
 const path = location.pathname;
 
@@ -19,6 +20,7 @@ switch (path) {
     listeners.setUpdateProfileListener();
     break;
   case "/listings/":
+    slider();
     listeners.readListings();
     break;
   case "/listing/":
@@ -33,6 +35,7 @@ switch (path) {
     listeners.readProfile();
     break;
   case "/home/index.html":
+    slider();
     listeners.readListingsHomePage();
     break;
 }

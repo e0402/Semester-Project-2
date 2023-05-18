@@ -1,37 +1,5 @@
 import { removeListing } from "../api/listings/index.mjs";
 
-//Slider listings page
-let images = [];
-let currentIndex = 0;
-
-function preloadImages() {
-  for (let i = 0; i < slides.length; i++) {
-    images[i] = new Image();
-    images[i].src = slides[i].getAttribute("data-image");
-  }
-}
-
-function showSlide(index) {
-  slides[currentIndex].classList.remove("active");
-  slides[index].classList.add("active");
-  currentIndex = index;
-}
-
-function nextSlide() {
-  let index = currentIndex + 1;
-  if (index === slides.length) {
-    index = 0;
-  }
-  showSlide(index);
-}
-
-let slides = document.querySelectorAll(".slide");
-if (slides.length > 0) {
-  preloadImages();
-  showSlide(0);
-  setInterval(nextSlide, 5000);
-}
-
 /**
  * This export function is an HTML listings template with dynamic values inserted to retrieve all listings info from each listing author. The function also listens for a click event from whole card, profile link or delete button. If delete button is clicked, page reloads, before returning listings.
  *
