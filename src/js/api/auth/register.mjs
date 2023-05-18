@@ -20,6 +20,10 @@ export async function register(profile) {
     body,
   });
 
+  if (!response.ok) {
+    throw new Error("The account registration failed");
+  }
+
   const result = await response.json();
 
   return result;

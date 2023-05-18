@@ -22,7 +22,7 @@ export async function login(profile) {
   });
 
   if (!response.ok) {
-    throw new Error("User info is not registered.");
+    throw new Error("The user info provided is not yet registered.");
   }
 
   const { accessToken, ...user } = await response.json();
