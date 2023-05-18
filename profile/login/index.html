@@ -29,13 +29,11 @@
     <main class="form-signin w-100 m-auto">
       <section class="vh-100 green">
         <div class="container py-5 h-100">
-          <div
-            class="row d-flex justify-content-center align-items-center h-100"
-          >
-            <div class="col col-xl-10">
-              <div class="card" style="border-radius: 1rem">
+          <div class="row d-flex justify-content-center h-100">
+            <div class="col-12 col-md-10 col-lg-12 col-xl-10">
+              <div class="card mb-5" style="border-radius: 1rem">
                 <div class="row g-0">
-                  <div class="col-md-7 col-lg-6 d-none d-md-block">
+                  <div class="col-lg-7 d-none d-lg-block">
                     <img
                       src="../../media/rolex-login.jpg"
                       alt="A silver and gold rolex watch laying on a brown wooden table"
@@ -45,7 +43,7 @@
                       width="100%"
                     />
                   </div>
-                  <div class="col-md-5 col-lg-6 d-flex align-items-center">
+                  <div class="col-md-10 col-lg-5 d-flex align-items-center">
                     <div class="card-body p-4 p-lg-5 text-black">
                       <form id="loginForm">
                         <div class="d-flex align-items-center mb-3 pb-1">
@@ -67,40 +65,40 @@
                         </h5>
 
                         <div class="form-outline mb-4">
+                          <label class="form-label" for="loginEmailValidation"
+                            ><strong>Noroff email:</strong></label
+                          >
                           <input
                             type="email"
                             name="email"
-                            id="form2Example27"
+                            id="loginEmailValidation"
                             class="form-control form-control-lg"
                             required
                             pattern="^\w+@stud\.noroff\.no$"
                             title="Only Noroff emails may be used (e.g. student@stud.noroff.no)"
-                            placeholder="Please type in your Noroff email"
+                            placeholder="example@stud.noroff.no"
                           />
-
-                          <label
-                            class="form-label"
-                            for="form2Example27"
-                          ></label>
                         </div>
 
                         <div class="form-outline mb-0">
+                          <label
+                            class="form-label"
+                            for="loginPasswordValidation"
+                            ><strong>Account password:</strong></label
+                          >
                           <input
                             type="password"
                             name="password"
-                            id="form2Example27"
+                            id="loginPasswordValidation"
                             class="form-control form-control-lg"
                             required
                             minlength="8"
-                            placeholder="Please choose a password (min 8 characters)"
+                            title="Must only at least 8 characters. Combinations of uppercase, lowercase letters and numbers allowed"
+                            placeholder="password123"
                           />
-                          <label
-                            class="form-label"
-                            for="form2Example27"
-                          ></label>
                         </div>
 
-                        <div class="pt-1 mb-4">
+                        <div class="pt-1 mb-4 mt-4">
                           <button class="btn btn-one btn-lg btn-success mb-2">
                             Log in
                           </button>

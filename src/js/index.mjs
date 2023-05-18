@@ -1,13 +1,16 @@
 import * as listeners from "./handlers/index.mjs";
 import { slider } from "./slider/slider.mjs";
+import { setupValidation } from "./validation/formValidation.mjs";
 
 const path = location.pathname;
 
 switch (path) {
   case "/profile/login/":
+    setupValidation();
     listeners.setFormLoginListener();
     break;
   case "/profile/register/":
+    setupValidation();
     listeners.setFormRegistrationListener();
     break;
   case "/listing/create/":
