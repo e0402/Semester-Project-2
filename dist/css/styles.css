@@ -10789,6 +10789,10 @@ nav.navbar .navbar-brand,
   color: #fff !important;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 .btn-outline-white:hover {
   color: #d0d0d0 !important;
 }

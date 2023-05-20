@@ -37,7 +37,7 @@ switch (path) {
   case "/profile/":
     listeners.readProfile();
     break;
-  case "/home/index.html":
+  case "/index.html":
     slider();
     listeners.readListingsHomePage();
     break;

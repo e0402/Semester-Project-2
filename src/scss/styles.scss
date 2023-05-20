@@ -83,6 +83,10 @@ nav.navbar .navbar-brand,
   color: $color-white !important;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 // Search button
 .btn-outline-white:hover {
   color: $color-highlight !important;
