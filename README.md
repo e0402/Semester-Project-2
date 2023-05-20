@@ -7,7 +7,7 @@
 - [Trello board (Kanban)/Gantt chart](https://trello.com/b/GYfiN57v)
 - [Style guide (Adobe XD)](https://xd.adobe.com/view/53dc2c75-4928-4f3f-b3f8-5af94da391bd-068f/)
 - [Prototype (Adobe XD)](https://xd.adobe.com/view/2cf94f87-8d07-4b5e-9899-be54efe0dfb4-79aa/)
-- [Website demo (Github)](https://github.com/your-username/your-repo)
+- [Website demo (Netlify)](https://luxury-bids.netlify.app/index.html)
 
 ## Semester Project brief
 
