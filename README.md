@@ -4,7 +4,8 @@
 
 ## Links
 
-- [Trello board (Kanban)/Gantt chart](https://trello.com/b/GYfiN57v)
+- [Kanban board (Trello)](https://trello.com/invite/b/GYfiN57v/ATTIbc307edaa1060eece339f07da9ed5555B4131781/semester-project-2)
+- [Gantt chart (Team Gantt)](https://prod.teamgantt.com/gantt/schedule/?ids=3521205&public_keys=9v3409Bz08lK&zoom=d100&font_size=12&estimated_hours=0&assigned_resources=0&percent_complete=0&documents=0&comments=0&col_width=355&hide_header_tabs=0&menu_view=1&resource_filter=1&name_in_bar=0&name_next_to_bar=0&resource_names=1&resource_hours=1#user=&company=&custom=&date_filter=&hide_completed=&color_filter=)
 - [Style guide (Adobe XD)](https://xd.adobe.com/view/53dc2c75-4928-4f3f-b3f8-5af94da391bd-068f/)
 - [Prototype (Adobe XD)](https://xd.adobe.com/view/2cf94f87-8d07-4b5e-9899-be54efe0dfb4-79aa/)
 - [Website demo (Netlify)](https://luxury-bids.netlify.app/index.html)
