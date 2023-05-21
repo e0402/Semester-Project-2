@@ -10865,6 +10865,11 @@ h1, .h1 {
   font-size: 1.7em;
 }
 
+.logo-icon {
+  color: #fff;
+  font-size: 24px;
+}
+
 .alt-size {
   font-size: 4em;
 }
