@@ -50,15 +50,7 @@ The Product Owner has requested links to the following:
 - A repository link
 - A hosted application demo link
 
-## Delivery
-
-Include the required links in the Moodle delivery window using this template format.
-
-All final changes must be merged into the default branch main or master. Other branches will not be checked.
-
-Ensure that the readme.md file describes your project thoroughly, including how to setup and run the project locally and any special instructions for testers.
-
-# How to get started
+## How to get started
 
 **Clone the repo to your local computer:**
 
